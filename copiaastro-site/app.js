@@ -45,31 +45,31 @@
     const presets = [
       {
         rule: /salsa en parejas basico/,
-        text: "Si es tu primera vez, aqui tienes bases claras para empezar a bailar salsa en pareja."
+        text: "Ruta inicial con bases claras para empezar salsa en pareja."
       },
       {
         rule: /salsa en parejas intermedio/,
-        text: "Sube de nivel con combinaciones intermedias y mejores transiciones en pareja."
+        text: "Combinaciones intermedias y transiciones de mayor complejidad en pareja."
       },
       {
         rule: /salsa en parejas avanzado/,
-        text: "Material para bailarines con mas experiencia, giros y secuencias completas."
+        text: "Material avanzado con giros, tecnica y secuencias completas."
       },
       {
         rule: /bachata en parejas basico/,
-        text: "Bachata desde cero: ritmo, base y figuras para empezar con confianza."
+        text: "Bachata desde cero: ritmo, base y figuras fundamentales."
       },
       {
         rule: /bachata en parejas inter/,
-        text: "Combinaciones de bachata con mas fluidez, tecnica y control de pareja."
+        text: "Combinaciones de bachata con mayor fluidez, tecnica y control de pareja."
       },
       {
         rule: /pasos libres/,
-        text: "Entrenamiento de shines y musicalidad para practicar solo y mejorar estilo."
+        text: "Entrenamiento de shines y musicalidad para reforzar estilo y control."
       },
       {
         rule: /party pack/,
-        text: "Clases para social: merengue, cumbia y dinamicas para no parar de bailar."
+        text: "Contenido social con merengue, cumbia y dinamicas de pista."
       }
     ];
 
@@ -89,7 +89,7 @@
       return clip(sample, 150);
     }
 
-    return `Coleccion con ${videos.length} videos organizados para practicar a tu ritmo.`;
+    return `Coleccion con ${videos.length} videos organizados por nivel y tematica.`;
   };
 
   const getCoverVideo = (videos) => videos.find((video) => video.thumbnailUrl) || videos[0] || null;
